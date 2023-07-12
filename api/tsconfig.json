@@ -8,11 +8,6 @@
     "module": "commonjs",
     "outDir": "dist"
   },
-  "scripts": {
-    "start": "NODE_ENV=production node dist/server.js",
-    "build": "tsc",
-    "develop": "NODE_ENV=development ts-node --esm server.ts"
-  },
   "include": ["*.ts"],
   "lib": ["es2015"]
 }
