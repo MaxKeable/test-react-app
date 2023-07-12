@@ -4,11 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "install": "cd client && npm install && cd ../api && npm install",
+    "build": "cd client && npm run build && cd ../api && npm run build",
     "start": "cd api && npm run start",
-    "install": "cd api && npm install",
-    "develop": "cd api && npm run develop",
-    "build": "cd api && npm run build"
+    "develop": "concurrently \"cd client && npm start\" \"cd api && npm run develop\""
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.0"
+  }
 }
