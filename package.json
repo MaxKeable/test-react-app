@@ -1,10 +1,12 @@
 {
-  "name": "test-react-app",
+  "name": "testdeployment",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cd api && npm start",
+    "start": "cd api && npm run start",
+    "install": "cd api && npm install",
+    "develop": "cd api && npm run develop",
     "build": "cd api && npm run build"
   },
   "author": "",
